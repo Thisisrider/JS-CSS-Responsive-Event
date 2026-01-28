@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.menu-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.menu-desc {
+  font-size: 0.95rem;
+  color: #777;
+}
+
+.price {
+  color: #d4a24c;
+  font-weight: 600;
+}
+
+.menu-section h2 {
+  letter-spacing: 1px;
+}
+
+.delivery-banner {
+  height: 220px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092")
+      center/cover no-repeat;
+}
+
+.delivery-text {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+.food-card img {
+  height: 240px;
+  object-fit: cover;
+}
+
+.food-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+.latest-news-section {
+  position: relative;
+  padding: 100px 0;
+  background-image: url('/mnt/data/Screenshot 2026-01-28 151527.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.latest-news-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.news-image img {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.testimonial-card p {
+  color: #6c757d;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.stars {
+  color: #d4a373;
+  font-size: 14px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.carousel-indicators .active {
+  background-color: #d4a373;
+}
+
+</style>
+
+
+</head>
+<body>
+    <section class="menu-section py-5">
+  <div class="container">
+
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <small class="text-warning fst-italic">Featured Dishes</small>
+      <h2 class="fw-bold">OUR MENU</h2>
+    </div>
+
+    <div class="row g-5">
+
+      <!-- LEFT COLUMN -->
+      <div class="col-md-6">
+
+        <!-- Item -->
+        <div class="menu-item d-flex mb-4">
+          <img src="https://via.placeholder.com/90" class="menu-img" alt="">
+          <div class="ms-3 w-100">
+            <div class="d-flex justify-content-between border-bottom pb-1">
+              <h5 class="mb-0">California Roll</h5>
+              <span class="price">$7.99</span>
+            </div>
+            <p class="menu-desc mt-2">
+              Enjoy the fresh flavors of our California Roll, made with crab meat,
+              avocado, and cucumber, wrapped in seaweed and rice.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item d-flex mb-4">
+          <img src="https://via.placeholder.com/90" class="menu-img" alt="">
+          <div class="ms-3 w-100">
+            <div class="d-flex justify-content-between border-bottom pb-1">
+              <h5 class="mb-0">Spicy Tuna Roll</h5>
+              <span class="price">$8.89</span>
+            </div>
+            <p class="menu-desc mt-2">
+              Fresh tuna mixed with spicy mayo and cucumber,
+              wrapped in seaweed and rice.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item d-flex">
+          <img src="https://via.placeholder.com/90" class="menu-img" alt="">
+          <div class="ms-3 w-100">
+            <div class="d-flex justify-content-between border-bottom pb-1">
+              <h5 class="mb-0">Pizza BBQ</h5>
+              <span class="price">$18.99</span>
+            </div>
+            <p class="menu-desc mt-2">
+              BBQ chicken, red onions, mozzarella cheese on a crispy crust
+              with tangy BBQ sauce.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col-md-6">
+
+        <div class="menu-item d-flex mb-4">
+          <img src="https://via.placeholder.com/90" class="menu-img" alt="">
+          <div class="ms-3 w-100">
+            <div class="d-flex justify-content-between border-bottom pb-1">
+              <h5 class="mb-0">Dragon Roll</h5>
+              <span class="price">$12.99</span>
+            </div>
+            <p class="menu-desc mt-2">
+              Tempura shrimp and cucumber inside, topped with avocado,
+              eel sauce, and sesame seeds.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item d-flex mb-4">
+          <img src="https://via.placeholder.com/90" class="menu-img" alt="">
+          <div class="ms-3 w-100">
+            <div class="d-flex justify-content-between border-bottom pb-1">
+              <h5 class="mb-0">Vegetable Roll</h5>
+              <span class="price">$6.99</span>
+            </div>
+            <p class="menu-desc mt-2">
+              A mix of avocado, cucumber, carrot, and bell pepper,
+              wrapped in seaweed and rice.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item d-flex">
+          <img src="https://via.placeholder.com/90" class="menu-img" alt="">
+          <div class="ms-3 w-100">
+            <div class="d-flex justify-content-between border-bottom pb-1">
+              <h5 class="mb-0">Fritti Di Mare</h5>
+              <span class="price">$22.99</span>
+            </div>
+            <p class="menu-desc mt-2">
+              Seafood medley with shrimp, calamari, and mussels,
+              topped with garlic and mozzarella.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<section class="delivery-banner d-flex align-items-center justify-content-center text-center">
+  <h2 class="delivery-text">
+    Free Delivery on Order Over $59
+  </h2>
+</section>
+<section class="py-5 bg-light">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="text-center mb-5">
+      <small class="text-uppercase text-muted d-block">Best Sellers for Delivery</small>
+      <h2 class="fw-bold">Favorite Delivery</h2>
+    </div>
+
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm food-card">
+          <div class="position-relative">
+            <img src="/mnt/data/Screenshot 2026-01-28 145427.png" class="card-img-top" alt="Foie Gras">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-3">Sale!</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Foie Gras with Vegetable Salad</h5>
+            <p class="card-text text-muted small">
+              Pan-seared foie gras served with fresh baby greens, cherry tomatoes,
+              and a light balsamic vinaigrette.
+            </p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+            <div>
+              <span class="text-decoration-line-through text-muted me-2">$29.99</span>
+              <span class="fw-bold text-warning">$23.99</span>
+            </div>
+            <a href="#" class="btn btn-outline-dark btn-sm">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm food-card">
+          <img src="/mnt/data/Screenshot 2026-01-28 145427.png" class="card-img-top" alt="Spicy Salmon Spaghetti">
+          <div class="card-body">
+            <h5 class="card-title">Spicy Salmon Spaghetti</h5>
+            <p class="card-text text-muted small">
+              Al dente spaghetti tossed in a zesty tomato sauce with chili flakes,
+              garlic, herbs, and grilled salmon.
+            </p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+            <span class="fw-bold text-warning">$21.99</span>
+            <a href="#" class="btn btn-outline-dark btn-sm">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm food-card">
+          <img src="/mnt/data/Screenshot 2026-01-28 145427.png" class="card-img-top" alt="Creamy Meatball Soup">
+          <div class="card-body">
+            <h5 class="card-title">Creamy Meatball Soup</h5>
+            <p class="card-text text-muted small">
+              Tender meatballs with cauliflower, peas, and carrots simmered
+              in a rich, creamy broth.
+            </p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+            <span class="fw-bold text-warning">$8.99</span>
+            <a href="#" class="btn btn-outline-dark btn-sm">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<section class="latest-news-section">
+  <div class="overlay"></div>
+
+  <div class="container position-relative">
+    <!-- Section Heading -->
+    <div class="text-center text-white mb-5">
+      <small class="text-warning fst-italic d-block">From Our Blog</small>
+      <h2 class="fw-bold">Latest News</h2>
+    </div>
+
+    <div class="row align-items-center g-5">
+      <!-- Image -->
+      <div class="col-lg-6">
+        <div class="news-image">
+          <img src="/mnt/data/Screenshot 2026-01-28 151527.png" alt="Catering Event" class="img-fluid rounded-4">
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="col-lg-6 text-white">
+        <p class="text-warning fst-italic mb-2">July 22, 2024</p>
+        <h3 class="mb-4">
+          Elevate Your Event with Our<br>
+          Exceptional Catering Services
+        </h3>
+        <p class="text-light opacity-75 mb-4">
+          Discover how our top-notch catering services can make your next event
+          unforgettable, with customizable menus and impeccable service.
+          Planning an event? Let Cristiano take care of all your catering needs...
+        </p>
+        <a href="#" class="btn btn-outline-warning px-4 py-2">
+          Read More
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-white">
+  <div class="container">
+
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+      <small class="text-warning fst-italic d-block">What Our Clients Say</small>
+      <h2 class="fw-bold">Testimonials</h2>
+    </div>
+
+    <!-- Carousel -->
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row g-4 justify-content-center">
+
+            <!-- Card -->
+            <div class="col-lg-4 col-md-6">
+              <div class="testimonial-card">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="https://i.pravatar.cc/60?img=1" class="rounded-circle me-3" alt="">
+                  <div>
+                    <h6 class="mb-0">James H.</h6>
+                    <div class="stars">★★★★★</div>
+                  </div>
+                </div>
+                <p>
+                  I visited this restaurant with my family and we were blown
+                  away by the quality of the food and the service. The ambience
+                  was perfect and we felt so comfortable throughout the meal.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="col-lg-4 col-md-6 d-none d-lg-block">
+              <div class="testimonial-card">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="https://i.pravatar.cc/60?img=5" class="rounded-circle me-3" alt="">
+                  <div>
+                    <h6 class="mb-0">Sarah P.</h6>
+                    <div class="stars">★★★★★</div>
+                  </div>
+                </div>
+                <p>
+                  I'm so glad I stumbled upon this restaurant. The food is
+                  exceptional and the staff is warm and welcoming. Highly
+                  recommend for a memorable dining experience.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="col-lg-4 d-none d-lg-block">
+              <div class="testimonial-card">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="https://i.pravatar.cc/60?img=8" class="rounded-circle me-3" alt="">
+                  <div>
+                    <h6 class="mb-0">Alex B.</h6>
+                    <div class="stars">★★★★★</div>
+                  </div>
+                </div>
+                <p>
+                  I recently celebrated a special occasion here and it was
+                  unforgettable. The food was outstanding and the staff went
+                  above and beyond.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Slide 2 (duplicate with different content if needed) -->
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6">
+              <div class="testimonial-card">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="https://i.pravatar.cc/60?img=11" class="rounded-circle me-3" alt="">
+                  <div>
+                    <h6 class="mb-0">Emily R.</h6>
+                    <div class="stars">★★★★★</div>
+                  </div>
+                </div>
+                <p>
+                  The flavors were incredible and every dish was beautifully
+                  presented. Easily one of the best dining experiences I've had.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+      <!-- Indicators -->
+      <div class="carousel-indicators position-relative mt-4">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+      </div>
+
+    </div>
+  </div>
+</section>
+</body>
+</html>
