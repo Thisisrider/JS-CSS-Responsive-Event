@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Locations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #fafafa;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    .location-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
+    }
+
+    .location-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .location-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .location-content {
+      padding: 30px;
+    }
+
+    .location-title {
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .location-content p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .location-content i {
+      color: #c89b5f;
+      margin-right: 8px;
+    }
+
+    .details-link {
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: #000;
+      border-bottom: 1px solid #c89b5f;
+      padding-bottom: 3px;
+    }
+
+    @media (max-width: 768px) {
+      .location-img {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+
+  <!-- Location Card 1 -->
+  <div class="row mb-5 align-items-center location-card" data-aos="fade-up">
+    <div class="col-md-6 p-0">
+      <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1" class="location-img">
+    </div>
+    <div class="col-md-6">
+      <div class="location-content">
+        <h4 class="location-title">Cristiano Restaurant – Milan, Italy</h4>
+        <p><i class="bi bi-geo-alt"></i>Via Monte Napoleone 10, 20121 Milan, Italy</p>
+        <p><i class="bi bi-telephone"></i>+39 02 98765432</p>
+        <p><i class="bi bi-envelope"></i>contact@cristiano.com</p>
+        <a href="#" class="details-link">MORE DETAILS</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location Card 2 -->
+  <div class="row mb-5 align-items-center location-card" data-aos="fade-up" data-aos-delay="150">
+    <div class="col-md-6 p-0 order-md-2">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" class="location-img">
+    </div>
+    <div class="col-md-6 order-md-1">
+      <div class="location-content">
+        <h4 class="location-title">Cristiano Restaurant – Valencia, Spain</h4>
+        <p><i class="bi bi-geo-alt"></i>Carrer de Colón 45, 46004 Valencia, Spain</p>
+        <p><i class="bi bi-telephone"></i>+34 96 1234567</p>
+        <p><i class="bi bi-envelope"></i>contact@cristianorestaurant.es</p>
+        <a href="#" class="details-link">MORE DETAILS</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location Card 3 -->
+  <div class="row mb-5 align-items-center location-card" data-aos="fade-up" data-aos-delay="300">
+    <div class="col-md-6 p-0">
+      <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814" class="location-img">
+    </div>
+    <div class="col-md-6">
+      <div class="location-content">
+        <h4 class="location-title">Cristiano Restaurant – Alicante, Spain</h4>
+        <p><i class="bi bi-geo-alt"></i>Carrer de la Generalitat 15, 03001 Alicante, Spain</p>
+        <p><i class="bi bi-telephone"></i>+34 96 7654321</p>
+        <p><i class="bi bi-envelope"></i>contact@cristianorestaurant.com</p>
+        <a href="#" class="details-link">MORE DETAILS</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS Animation JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 900,
+    once: true
+  });
+</script>
+
+</body>
+</html>
