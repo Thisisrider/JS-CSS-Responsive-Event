@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.menu-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.menu-desc {
+  font-size: 0.95rem;
+  color: #777;
+}
+
+.price {
+  color: #d4a24c;
+  font-weight: 600;
+}
+
+.menu-section h2 {
+  letter-spacing: 1px;
+}
+</style>
+
+</head>
+<body>
+    <section class="menu-section py-5">
+  <div class="container">
+
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <small class="text-warning fst-italic">Featured Dishes</small>
+      <h2 class="fw-bold">OUR MENU</h2>
+    </div>
+
+    <div class="row g-5">
+
+      <!-- LEFT COLUMN -->
+      <div class="col-md-6">
+
+        <!-- Item -->
+        <div class="menu-item d-flex mb-4">
+          <img src="https://via.placeholder.com/90" class="menu-img" alt="">
+          <div class="ms-3 w-100">
+            <div class="d-flex justify-content-between border-bottom pb-1">
+              <h5 class="mb-0">California Roll</h5>
+              <span class="price">$7.99</span>
+            </div>
+            <p class="menu-desc mt-2">
+              Enjoy the fresh flavors of our California Roll, made with crab meat,
+              avocado, and cucumber, wrapped in seaweed and rice.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item d-flex mb-4">
+          <img src="https://via.placeholder.com/90" class="menu-img" alt="">
+          <div class="ms-3 w-100">
+            <div class="d-flex justify-content-between border-bottom pb-1">
+              <h5 class="mb-0">Spicy Tuna Roll</h5>
+              <span class="price">$8.89</span>
+            </div>
+            <p class="menu-desc mt-2">
+              Fresh tuna mixed with spicy mayo and cucumber,
+              wrapped in seaweed and rice.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item d-flex">
+          <img src="https://via.placeholder.com/90" class="menu-img" alt="">
+          <div class="ms-3 w-100">
+            <div class="d-flex justify-content-between border-bottom pb-1">
+              <h5 class="mb-0">Pizza BBQ</h5>
+              <span class="price">$18.99</span>
+            </div>
+            <p class="menu-desc mt-2">
+              BBQ chicken, red onions, mozzarella cheese on a crispy crust
+              with tangy BBQ sauce.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col-md-6">
+
+        <div class="menu-item d-flex mb-4">
+          <img src="https://via.placeholder.com/90" class="menu-img" alt="">
+          <div class="ms-3 w-100">
+            <div class="d-flex justify-content-between border-bottom pb-1">
+              <h5 class="mb-0">Dragon Roll</h5>
+              <span class="price">$12.99</span>
+            </div>
+            <p class="menu-desc mt-2">
+              Tempura shrimp and cucumber inside, topped with avocado,
+              eel sauce, and sesame seeds.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item d-flex mb-4">
+          <img src="https://via.placeholder.com/90" class="menu-img" alt="">
+          <div class="ms-3 w-100">
+            <div class="d-flex justify-content-between border-bottom pb-1">
+              <h5 class="mb-0">Vegetable Roll</h5>
+              <span class="price">$6.99</span>
+            </div>
+            <p class="menu-desc mt-2">
+              A mix of avocado, cucumber, carrot, and bell pepper,
+              wrapped in seaweed and rice.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-item d-flex">
+          <img src="https://via.placeholder.com/90" class="menu-img" alt="">
+          <div class="ms-3 w-100">
+            <div class="d-flex justify-content-between border-bottom pb-1">
+              <h5 class="mb-0">Fritti Di Mare</h5>
+              <span class="price">$22.99</span>
+            </div>
+            <p class="menu-desc mt-2">
+              Seafood medley with shrimp, calamari, and mussels,
+              topped with garlic and mozzarella.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
